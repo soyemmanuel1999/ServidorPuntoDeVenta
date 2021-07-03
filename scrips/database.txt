@@ -1,0 +1,14 @@
+consultas mysql proyecto tienda 
+ CREATE TABLE usuarios(
+	id int PRYMARY KEY AUTO_INCREMENT,
+	nombres varchar(64) not null,
+	apellidos varchar(64) not null,
+	correo varchar(64) not null,
+	contrasena varchar(64)	not null
+);
+CREATE TABLE categorias(
+	id int PRIMARY KEY AUTO_INCREMENT,
+    nombre varchar()
+)
+
+

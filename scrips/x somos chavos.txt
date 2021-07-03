@@ -1,0 +1,31 @@
+	System.out.println(cont+" "+line);
+					pw.println(cont);
+					FileReader fr1=new FileReader(archivo,StandardCharsets.UTF_8);
+					BufferedReader br1 =new BufferedReader(fr);
+					File archivo2 =new File("C:\\Users\\Usuario\\Downloads\\me121121dicamSentosnusesadv.txt");
+					FileReader fr2=new FileReader(archivo2,StandardCharsets.UTF_8);
+					BufferedReader br2 =new BufferedReader(fr);
+					FileWriter fichero2=new FileWriter("C:\\Users\\Usuario\\Downloads\\ficherofiltrado.txt"); 
+					PrintWriter pw2= new PrintWriter(fichero2);
+					while((line1=br.readLine())!=null) {
+						con1++;
+						while((line2=br.readLine())!=null) {
+							int num=Integer.parseInt(line2);	
+							if(con1==num) {
+									if(line1.contains("Generalidades")) {
+										imprimir=false;
+									}else
+									if(line1.contains("Clave")) {
+										imprimir=true;
+									}
+									if(imprimir) {
+										pw2.println(line1);
+									} 
+							
+						}
+			
+					}
+						
+					}
+					
+				}
